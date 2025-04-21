@@ -1,24 +1,35 @@
+import { NavLink } from "react-router-dom";
+import { Link } from "react-scroll";
+
 function Nav() {
   return (
     <nav>
       <ul>
         <li>
-          <a href="#home">HOME</a>
+          <NavLink to="/">HOME</NavLink>
         </li>
         <li>
-          <a href="#about">ABOUT</a>
+          <Link to="about" className="enlace">
+            ABOUT
+          </Link>
         </li>
         <li>
-          <a href="#menu">MENU</a>
+          <Link to="menu" className="enlace">
+            MENU
+          </Link>
         </li>
         <li>
-          <a href="#reservations">RESERVATIONS</a>
+          <NavLink to="/booking">RESERVATIONS</NavLink>
         </li>
         <li>
-          <a href="#orderOnline">ORDER ONLINE</a>
+          <Link to="orderOnline" className="enlace">
+            ORDER ONLINE
+          </Link>
         </li>
         <li>
-          <a href="#login">LOGIN</a>
+          <Link to="login" className="enlace">
+            LOGIN
+          </Link>
         </li>
       </ul>
     </nav>

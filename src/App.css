@@ -1,42 +1,312 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Karla Regular, Courier New', Courier, monospace;
+}
+
+
+header{
+  display: flex;
+  justify-content: space-around;
+  justify-items: center;
+  align-items: center;  
+  flex-wrap: wrap;
+}
+
+
+
+ul{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+li {
+  margin: 0px 10px;
+  font-family: 'Markazi Text, Courier New', Courier, monospace;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
 }
 
 .logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+  height: 60px;
+  display: inline;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+footer{
+  margin-top: 5px;
+  display: flex;
+  justify-items: center;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.footerParagraph {
+  width: 100px;
+  font-size: 12px;
+}
+
+.chicago {
+  background-color: #495E57;
+  display: flex;
+  justify-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.hero {
+  background-color: #495E57;
+  display: flex;
+  justify-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.chicago {
+  background-color: #495E57;
+  display: flex;
+  justify-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.specials {
+  display: flex;
+  justify-items: center;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 100px;
+}
+
+.headerCardSpecial {
+  display: flex;
+  justify-content: space-between;
+}
+
+.precio {
+  color: #EE9972;
+  font-weight: bold;
+}
+
+.plato {
+  font-weight: bold;
+}
+
+.description {
+  font-weight: 100;
+}
+
+.delivery {
+  font-weight: bold;
+}
+
+.card-container {
+  margin: auto;
+  width: 70%;
+}
+
+.cards {
+  display: flex;
+  justify-items: center;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 100px;
 }
 
 .card {
-  padding: 2em;
+  max-width: 300px;
+  height: 425px;
+  background-color: #EDEFEE;
+  border-radius: 15px;
+  margin: 10px;
 }
 
-.read-the-docs {
-  color: #888;
+.card img {
+  width: 300px;
+  height: 200px;
+  border-radius: 15px;
+}
+
+.card p, span {
+  padding: 10px;
+}
+
+
+.card-container-testimonials {
+  margin: auto;
+  width: 70%;
+  padding: 5px;
+}
+
+.card-container-testimonials h1 {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.cards-testimonials {
+  display: flex;
+  justify-items: center;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 100px;
+}
+
+.card-testimonials {
+  width: 250px;
+  height: 180px;
+  background-color: #EDEFEE;
+  border-radius: 15px;
+  margin: 10px;
+  padding: 10px;
+}
+
+.testimonialBody {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-testimonials img {
+  width: 150px;
+  height: 100px;
+  margin: 10px;
+}
+
+.card p, span {
+  padding: 10px;
+}
+
+.hero h1 {
+  color: #F4CE14
+}
+
+.hero h3 {
+  color: #fff
+}
+
+.hero p {
+  color: #fff
+}
+
+.picturecalltoaction {
+  position: relative;
+  top: 60px;
+
+}
+
+.picturecalltoaction img {
+  border-radius: 15px;
+}
+
+.picturecchicago {
+  border-radius: 15px;
+  top: 60px; 
+}
+
+.chicago {
+  width: 300px;
+}
+
+.calltoaction {
+  width: 300px;
+}
+
+
+
+.buttonCallToAction {
+  background-color: #F4CE14;
+  margin-top: 30px;
+  width: 180px;
+  height: 50px;
+  border: none;
+  border-radius: 15px;
+  font-weight: bold;
+  font-family: 'Markazi Text, Courier New', Courier, monospace;
+  cursor: pointer;
+}
+
+.buttonCallToAction:hover {
+  background-color: #c3a510;
+  color: white;
+}
+
+.enlace {
+  cursor: pointer;
+}
+
+
+
+.bookingFrom-container {
+  width: 350px;
+  margin: auto;
+}
+
+.bookingForm {
+  display: flex; 
+  flex-direction: column;
+  max-width: 100%; 
+  margin: 30px;
+  border: none;
+  padding: 4px;
+  border-radius: 10px;
+  box-shadow: 1px 3px 3px 1px;
+}
+
+label {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+input {
+  border: line;
+  border-radius: 5px;
+  height: 30px;
+  font-size: larger;
+}
+
+select {
+  border: line;
+  border-radius: 10px;
+  height: 30px; 
+  font-size: larger;
+}
+
+.alert {
+  color: red;
+  font-weight: bold;
+}
+
+
+.buttonReservation {
+  text-align: center;
+  background-color: #0d0b6e;
+  color: white;
+  margin-top: 30px;
+  width: 180px;
+  height: 50px;
+  border: none;
+  border-radius: 15px;
+  font-weight: bold;
+  font-family: 'Markazi Text, Courier New', Courier, monospace;
+  cursor: pointer;
+}
+
+.buttonReservation:hover {
+  background-color: #1412b0;
+  color: white;
+}
+
+.buttonReservation-container {
+  margin: auto;
 }
