@@ -8,6 +8,7 @@ const seededRandom = function (seed) {
 }
 
 export const fetchAPI = function (date) {
+
   let result = [];
   let random = seededRandom(date.getDate());
 

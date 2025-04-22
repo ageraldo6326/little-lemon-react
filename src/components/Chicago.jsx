@@ -1,6 +1,6 @@
 function Chicago() {
   return (
-    <div className="hero" id="hero" name="hero">
+    <div className="chicago" id="chicago" name="chicago">
       <div className="calltoaction">
         <h1>Little Leon</h1>
         <h3>Chicago</h3>
@@ -12,7 +12,8 @@ function Chicago() {
         </p>
       </div>
       <div className="picturecchicago">
-        <img src="img/plato3.jpg" alt="hero" />
+        <img src="img/plato3.jpg" alt="hero" id="picturchicago1" />
+        <img src="img/plato1.jpg" alt="hero" id="picturchicago2" />
       </div>
     </div>
   );

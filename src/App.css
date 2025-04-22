@@ -51,15 +51,6 @@ footer{
   font-size: 12px;
 }
 
-.chicago {
-  background-color: #495E57;
-  display: flex;
-  justify-items: center;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  align-items: center;
-}
-
 .hero {
   background-color: #495E57;
   display: flex;
@@ -76,6 +67,19 @@ footer{
   justify-content: space-around;
   flex-wrap: wrap;
   align-items: center;
+  padding: 150px;
+}
+
+.chicago h1 {
+  color: #F4CE14
+}
+
+.chicago h3 {
+  color: #fff
+}
+
+.chicago p {
+  color: #fff
 }
 
 .specials {
@@ -209,14 +213,6 @@ footer{
   border-radius: 15px;
 }
 
-.picturecchicago {
-  border-radius: 15px;
-  top: 60px; 
-}
-
-.chicago {
-  width: 300px;
-}
 
 .calltoaction {
   width: 300px;
@@ -247,21 +243,44 @@ footer{
 
 
 
-.bookingFrom-container {
-  width: 350px;
+.bookingForm-container {
+  padding: 100px 0px;
   margin: auto;
+  background-color: #495E57;
 }
+
+.confirmationForm-container {
+  padding: 100px;
+  margin: auto;
+  background-color: #495E57;
+  color: white;
+}
+
+
 
 .bookingForm {
   display: flex; 
   flex-direction: column;
-  max-width: 100%; 
-  margin: 30px;
+  width: 50%; 
+  margin: auto;
   border: none;
-  padding: 4px;
-  border-radius: 10px;
+  padding: 10px;
+  background-color: white;
   box-shadow: 1px 3px 3px 1px;
 }
+
+.confirmationForm {
+  display: flex; 
+  flex-direction: column;
+  width: 50%; 
+  margin: auto;
+  border: none;
+  padding: 10px;
+  background-color: white;
+  color: black;
+  box-shadow: 1px 3px 3px 1px;
+}
+
 
 label {
   margin-top: 10px;
@@ -290,23 +309,70 @@ select {
 
 .buttonReservation {
   text-align: center;
-  background-color: #0d0b6e;
+  background-color: #F4CE14;
   color: white;
   margin-top: 30px;
   width: 180px;
   height: 50px;
   border: none;
   border-radius: 15px;
+  font-size: large;
   font-weight: bold;
   font-family: 'Markazi Text, Courier New', Courier, monospace;
   cursor: pointer;
 }
 
 .buttonReservation:hover {
-  background-color: #1412b0;
+  background-color: #72610a;
   color: white;
 }
 
 .buttonReservation-container {
   margin: auto;
+}
+
+.footer_logo {
+  width: 100px;
+}
+
+#picturchicago2 {
+  position: relative;
+  top: 90px;  
+  right: 200px;
+  width: 400px;
+}
+
+#picturchicago1 {
+  width: 400px;
+  position: relative;
+  left: 450px
+
+}
+
+
+@media (max-width: 500px) {
+
+  .confirmationForm-container {
+    padding: 5px;
+    margin: auto;
+  }
+
+  .confirmation-container {
+    padding: 5px;
+    margin: auto;
+  }
+
+  .bookingForm {
+    width: 90%;
+  }
+
+
+  .confirmationForm {
+    width: 90%;
+    margin: auto;
+  }  
+
+
+
+
 }

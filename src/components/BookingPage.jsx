@@ -1,4 +1,3 @@
-import { useReducer } from "react";
 import BookingForm from "./BookingForm";
 import Footer from "./Footer";
 import Header from "./Header";
@@ -12,20 +11,21 @@ function BookingPage() {
   };
 
   const updateTimes = (date) => {
-    const times = fetchAPI(date);
-    setAvailableTimes(times);
+    console.log("Entro aqui", date);
+    let times = fetchAPI(date);
+    return times;
   };
 
-  const [availableTimes, dispatch] = useReducer(
-    updateTimes,
-    [],
-    initializeTimes
-  );
+  let availableTimes = initializeTimes();
 
   return (
     <>
       <Header />
-      <BookingForm availableTimes={availableTimes} dispatch={dispatch} />
+      <BookingForm
+        availableTimes={availableTimes}
+        updateTimes={updateTimes}
+        submitAPI={submitAPI}
+      />
       <Footer />
     </>
   );
